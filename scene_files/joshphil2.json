@@ -1,0 +1,245 @@
+{
+  "frames" :[
+    {
+    "frameNumber" : 0,
+    "scene" : {
+      "camera" : {
+        "target" : [0, 0.5, 0],
+        "eye" : [0, 13.2, -33.3],
+        "worldUp" : [0, 1, 0],
+        "fov" : 19.5,
+        "width" : 512,
+        "height": 512
+      },
+      "primitives" : [
+        {
+          "shape" : "SquarePlane",
+          "name" : "Floor",
+          "material" : "mirrorChecker",
+          "transform" : {
+            "translate" : [0, -2.5, 0],
+            "rotate" : [-90, 0, 0],
+            "scale" : [25, 25, 1]
+          }
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Ceiling Wall",
+          "material" : "matteWhite",
+          "transform" : {
+            "translate" : [0, 17.5, 0],
+            "rotate" : [90,0,0],
+            "scale" : [25, 25, 1]
+          }
+        },
+        {
+          "shape" : "SquarePlane",
+          "name" : "Back Wall",
+          "material" : "matteWhite",
+          "transform" : {
+            "translate" : [0,2.5,10],
+            "rotate" : [0,180,0],
+            "scale" : [25, 25, 1]
+          }
+        },
+       {
+          "shape" : "Sphere",
+          "name" : "checkersphere",
+          "material" : "transmissiveMaterialGreen",
+          "transform" : {
+            "translate" : [2, 2, 2],
+            "rotate" : [0,45,45],
+            "scale" : [2, 2, 2]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "TransSphere",
+          "material" : "transmissiveMaterialWhite",
+          "transform" : {
+            "translate" : [-2, -1, -5],
+            "rotate" : [0,0,0],
+            "scale" : [2, 2, 2]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "TransSphere",
+          "material" : "transmissiveMaterialGreen",
+          "transform" : {
+            "translate" : [-2, 2, -5],
+            "rotate" : [0,0,0],
+            "scale" : [1, 1, 1]
+          }
+        },
+        {
+          "shape" : "Sphere",
+          "name" : "TransSphere",
+          "material" : "transmissiveMaterialTeal",
+          "transform" : {
+            "translate" : [-2, 3.5, -5],
+            "rotate" : [0,0,0],
+            "scale" : [0.5, 0.5, 0.5]
+          }
+        },
+        {
+          "shape" : "Cube",
+          "name" : "PlasticSphere3",
+          "material" : "plasticRed",
+          "transform" : {
+            "translate" : [-5, 0, 4],
+            "rotate" : [45,0,45],
+            "scale" : [2.5, 2.5, 2.5]
+          }
+        }
+      ],
+      "lights" : [
+        {
+          "shape" : "SquarePlane",
+          "name" : "Light Source Yellow",
+          "type" : "DiffuseAreaLight",
+          "lightColor" : [20,20,15],
+          "intensity" : 1,
+          "transform" : {
+            "translate" : [5,7.45,0],
+            "rotate" : [90,0,0],
+            "scale" : [5, 5, 1]
+          },
+          "isDelta" : false,
+          "twoSided" : true
+        }
+      ],
+      "materials" : [
+        {
+          "type" : "MatteMaterial",
+          "name" : "matteWhite",
+            "Kd" : [0.85, 0.81, 0.78],
+          "sigma": 0
+        },
+        {
+          "type" : "MatteMaterial",
+          "name" : "matteRed",
+          "Kd" : [0.63, 0.065, 0.05],
+          "sigma": 0
+        },
+        {
+          "type": "MatteMaterial",
+          "name": "matteGreen",
+          "Kd": [ 0.14, 0.45, 0.091 ],
+          "sigma": 0
+        },
+        {
+          "type" : "MatteMaterial",
+          "name" : "matteYellow",
+          "Kd" : [1, 1, 0],
+          "sigma": 0
+        },
+        {
+          "type": "MatteMaterial",
+          "name": "texturedBrick",
+          "Kd": [1, 1, 1],
+          "textureMap": "tex_nor_maps/brick.jpg",
+          "normalMap": "tex_nor_maps/brickN.jpg"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "chromeMirror",
+          "Kr": [1, 1, 1],
+          "roughness": 0.05
+        },
+        {
+          "type" : "MirrorMaterial",
+          "name" : "mirrorMarbleCheckered",
+          "Kr" : [1, 1, 1],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/marble.jpg"
+        },
+        {
+          "type" : "MirrorMaterial",
+          "name" : "mirrorRandom",
+          "Kr" : [1, 1, 1],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/random.png"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "mirrorDiamonds",
+          "Kr": [ 1, 1, 1 ],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/diamonds.jpg"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "mirrorChecker",
+          "Kr": [ 1, 1, 1 ],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/checker.jpg"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "mirrorZigZag",
+          "Kr": [ 1, 1, 1 ],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/zigzag.jpg"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "mirrorPolkadot",
+          "Kr": [ 1, 1, 1 ],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/polkadot.jpg"
+        },
+        {
+          "type": "MirrorMaterial",
+          "name": "mirrorFrost",
+          "Kr": [ 1, 1, 1 ],
+          "roughness": 1.0,
+          "roughnessMap": "tex_nor_maps/frost.jpg"
+        },
+        {
+          "type": "PlasticMaterial",
+          "name": "plasticGreen",
+          "Kd": [ 0.18, .93, 0.13 ],
+          "Ks": [ 1, 1, 1 ],
+          "roughness": 0.30
+        },
+        {
+          "type": "PlasticMaterial",
+          "name": "plasticPurple",
+          "Kd": [ 1.0, 0.18, .93 ],
+          "Ks": [ 1, 1, 1 ],
+          "roughness": 0.3
+        },
+        {
+          "type": "PlasticMaterial",
+          "name": "plasticRed",
+          "Kd": [ 1.0, 0.28, .23 ],
+          "Ks": [ 1, 1, 1 ],
+          "roughness": 0.3
+        },
+        {
+          "type": "TransmissiveMaterial_Microfacet",
+          "name": "transmissiveMaterialWhite",
+          "Kt": [ 1, 1, 1 ],
+          "eta": 1.3,
+          "roughness": 0.01
+        },
+        {
+          "type": "TransmissiveMaterial_Microfacet",
+          "name": "transmissiveMaterialGreen",
+          "Kt": [ 0.3, .7, 0.3 ],
+          "eta": 1.3,
+          "roughness": 0.01
+        },
+        {
+          "type": "TransmissiveMaterial_Microfacet",
+          "name": "transmissiveMaterialTeal",
+          "Kt": [ 0, 1, 1 ],
+          "eta": 1.3,
+          "roughness": 0.01
+        }
+      ]
+    }
+  }
+]
+}
