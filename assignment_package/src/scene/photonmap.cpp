@@ -155,10 +155,10 @@ void PhotonMap::emitPhotons(std::shared_ptr<Light> mylight) {
                 break;
             }
 
-//            myphotoncolor *= throughput;
+            myphotoncolor *= throughput;
             Color3f current_throughput = color * AbsDot(woW, isect.normalGeometric) *(1.f / pdf);
             throughput *= current_throughput;
-            myphotoncolor *= throughput;
+//            myphotoncolor *= throughput;
 
             //trace into scene
             woWray = isect.SpawnRay(woW);

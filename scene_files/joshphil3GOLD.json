@@ -8,8 +8,8 @@
         "eye" : [10, 5.2, -29.3],
         "worldUp" : [0, 1, 0],
         "fov" : 19.5,
-        "width" : 512,
-        "height": 384
+        "width" : 1024,
+        "height": 768
       },
       "primitives" : [
         {
